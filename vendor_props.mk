@@ -44,7 +44,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio_hal.in_period_size=144 \
     vendor.audio_hal.period_multiplier=3 \
     vendor.audio_hal.period_size=192 \
-    vendor.voice.path.for.pcm.voip=true
+    vendor.voice.path.for.pcm.voip=true \
+    ro.fastbootd.available=true
 
 PRODUCT_ODM_PROPERTIES += \
     ro.vendor.qti.va_odm.support=1 \
