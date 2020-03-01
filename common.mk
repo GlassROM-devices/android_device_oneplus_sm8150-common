@@ -41,8 +41,15 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_vendor=true \
+    POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
+    FILESYSTEM_TYPE_vendor=ext4 \
+    POSTINSTALL_OPTIONAL_vendor=true
+
 PRODUCT_PACKAGES += \
-    otapreopt_script
+    otapreopt_script \
+    checkpoint_gc
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -465,6 +472,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
+    f2fs_io \
+    check_f2fs \
     update_verifier
 
 PRODUCT_PACKAGES_DEBUG += \
