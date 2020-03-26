@@ -7,6 +7,9 @@
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oneplus/sm8150-common/sm8150-common-vendor.mk)
 
+# Import CFI defs
+$(call inherit-product, build/target/product/cfi-common.mk)
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_props.mk
 
@@ -181,6 +184,14 @@ PRODUCT_PACKAGES += \
     Snap \
     vendor.oneplus.camera.CameraHIDL@1.0.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor
+
+# CFI defs
+PRODUCT_CFI_INCLUDE_PATHS += \
+    device/oneplus/sm8150-common/sensors \
+    device/oneplus/sm8150-common/lights \
+    device/oneplus/sm8150-common/camera_motor \
+    device/oneplus/sm8150-common/tri-state-key \
+    device/oneplus/sm8150-common/vibrator
 
 # CNE
 PRODUCT_PACKAGES += \
