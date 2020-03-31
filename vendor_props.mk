@@ -125,10 +125,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_scaler=0 \
     vendor.display.enable_null_display=0
 
-# DRM
-PRODUCT_PROPERTY_OVERRIDES += \
-    drm.service.enabled=true
-
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qfp=true \
