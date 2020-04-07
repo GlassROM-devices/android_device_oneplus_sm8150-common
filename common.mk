@@ -502,6 +502,7 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     f2fs_io \
     check_f2fs \
+    e4defrag \
     update_verifier
 
 PRODUCT_PACKAGES_DEBUG += \
