@@ -63,7 +63,7 @@ on fs
 
     #ifdef VENDOR_EDIT
     mount ext4 /dev/block/bootdevice/by-name/op1 /op1 ro barrier=1 discard context=u:object_r:op1_file:s0
-    mount ext4 /dev/block/bootdevice/by-name/op2 /op2 noatime nosuid nodev barrier=1
+    mount ext4 /dev/block/bootdevice/by-name/op2 /op2 noatime nosuid nodev discard barrier=1
     chown system system /op2
     #endif
     # bin.zhong@ASTI, 2019/6/17, add for smartboost
