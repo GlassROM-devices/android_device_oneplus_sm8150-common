@@ -279,6 +279,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# fstrim
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/fstrim:$(TARGET_COPY_OUT_PRODUCT)/bin/fstrim
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
