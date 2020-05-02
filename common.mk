@@ -13,9 +13,6 @@ $(call inherit-product, vendor/oneplus/sm8150-common/sm8150-common-vendor.mk)
 # Import CFI defs
 $(call inherit-product, build/target/product/cfi-common.mk)
 
-# Vendor properties
--include $(LOCAL_PATH)/vendor_props.mk
-
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
