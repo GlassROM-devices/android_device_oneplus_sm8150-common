@@ -70,7 +70,6 @@ vendor/lib/soundfx/libshoebox.so
 vendor/lib/soundfx/libswdap.so
 vendor/lib/vendor.dolby.hardware.dms@1.0.so
 vendor/lib/libssrec.so
-vendor/lib/libtinycompress.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib64/libadsprpc.so
 
