@@ -101,3 +101,6 @@ persist.camera.is_mode=4
 persist.vendor.camera.oissr.debug=1
 vendor.debug.camera.eisv2enable=1
 vendor.debug.camera.eisv3enable=1
+
+# fsverity
+ro.apk_verity.mode=2
