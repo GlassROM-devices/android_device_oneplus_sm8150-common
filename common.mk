@@ -254,10 +254,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
-# For config.fs
-PRODUCT_PACKAGES += \
-    fs_config_files
-
 # fstrim
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fstrim:$(TARGET_COPY_OUT_PRODUCT)/bin/fstrim
@@ -325,11 +321,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
-
-# Misc
-PRODUCT_PACKAGES += \
-    libchrome \
-    libchrome.vendor
 
 # Net
 PRODUCT_PACKAGES += \

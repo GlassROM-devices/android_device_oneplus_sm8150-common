@@ -13,8 +13,8 @@ persist.vendor.audio.ras.enabled=false
 persist.vendor.audio.voicecall.speaker.stereo=true
 persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 ro.audio.monitorRotation=true
-ro.config.media_vol_steps=25
-ro.config.vc_call_vol_steps=7
+ro.config.media_vol_steps=30
+ro.config.vc_call_vol_steps=6
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
 vendor.audio.adm.buffering.ms=2
@@ -61,7 +61,9 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
 
 # Camera
+vendor.camera.aux.packagelist=com.google.android.GoogleCamera,org.codeaurora.snapcam
 ro.vendor.camera.res.fmq.size=1048576
+persist.vendor.camera.privapp.list=com.google.android.GoogleCamera,org.codeaurora.snapcam
 
 # Crypto
 ro.crypto.allow_encrypt_override=true

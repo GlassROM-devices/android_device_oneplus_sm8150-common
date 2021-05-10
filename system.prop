@@ -11,10 +11,6 @@ vendor.bluetooth.soc=cherokee
 persist.vendor.bt.a2dp.aac_whitelist=false
 ro.bluetooth.library_name=libbluetooth_qti.so
 
-# Camera
-vendor.camera.aux.packagelist=com.google.android.GoogleCamera,org.codeaurora.snapcam
-persist.vendor.camera.privapp.list=com.google.android.GoogleCamera,org.codeaurora.snapcam
-
 # Charger
 ro.charger.enable_suspend=true
 
@@ -69,9 +65,6 @@ ro.nfc.port=I2C
 
 # Perf
 ro.vendor.qti.sys.fw.bg_apps_limit=60
-
-# Priv-app permissions whitelist
-ro.control_privapp_permissions=enforce
 
 # Radio
 DEVICE_PROVISIONED=1
